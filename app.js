@@ -9,6 +9,15 @@ const { eAdmin } = require('./middlewares/auth')
 const app = express()
 
 app.use(express.json())
+//app.use(cors())
+
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Access-Control-Allow-Origin", "GET, POST, PUT, DELETE")
+    res.header("Access-Control-Allow-Origin", "X-PINGOTHER, Content-type, Authorization" )
+    app.use(cors())
+    next()
+})
 
 // Login com Token
 app.post('/login', async (req, res) => {

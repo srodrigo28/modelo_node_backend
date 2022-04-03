@@ -1,5 +1,6 @@
 # Aplicação com nodeJS e MYSQL
 ULTIMO VISTO: https://celke.com.br/clms/aula-curso/view/4173
+MINITO: 7:20
 
 
 https://celke.com.br/clms/aula-curso/view/4142
